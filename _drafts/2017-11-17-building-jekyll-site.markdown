@@ -44,3 +44,18 @@ bundle exec jekyll serve
 Go to http://localhost:4000 to view your local site.
 
 Create a new repo comadan.github.io on github and then push your jekyll folder to that directory to serve it on Github Pages.
+
+### Drafting Posts
+
+Draft posts can live in the `_drafts` directory. These posts can be viewed with `jekyll serve --drafts`
+
+### Including Images
+
+create a folder e.g. `./assets/` to hold images and other assets.
+
+Images can be shown with:
+```
+![My Image]({{ "/assets/screenshot.jpg" | absolute_url }})
+```
+
+More info on the right Markdown syntax for using images can be found in [jekyll's documentation](https://jekyllrb.com/docs/posts/) or in this [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).

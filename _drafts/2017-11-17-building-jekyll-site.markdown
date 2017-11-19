@@ -59,3 +59,22 @@ Images can be shown with:
 ```
 
 More info on the right Markdown syntax for using images can be found in [jekyll's documentation](https://jekyllrb.com/docs/posts/) or in this [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+### including Latex
+
+First you need to add the \_layouts directory. If we're using the default minima theme, you can get to this with 
+
+```open $(bundle show minima)```
+
+Copy the \_layouts directory to the root directory (e.g. comadan.github.io)
+
+you need to add the following javascript reference to load the mathjax library to render the latex
+```
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+```
+
+Now latex can be inserted into markdown, e.g.:
+
+```$$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$```
+
+will render as: $$x_{1,2} = {-b\pm\sqrt{b^2 - 4ac} \over 2a}.$$

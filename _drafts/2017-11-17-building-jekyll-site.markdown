@@ -14,6 +14,9 @@ List the known ruby packages
 rvm list known
 ```
 
+if rvm is not found: [https://rvm.io/rvm/install](https://rvm.io/rvm/install)
+
+
 Choose a package and install
 ```
 rvm install ruby-2.4.1
